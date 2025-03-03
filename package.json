@@ -1,0 +1,26 @@
+{
+  "name": "jojo-slots",
+  "version": "1.0.0",
+  "description": "random picker for jojo poses",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiyobi/jojo-slots.git"
+  },
+  "keywords": [
+    "jojo",
+    "poses",
+    "random",
+    "picker"
+  ],
+  "author": "chiyobi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiyobi/jojo-slots/issues"
+  },
+  "homepage": "https://github.com/chiyobi/jojo-slots#readme"
+}
