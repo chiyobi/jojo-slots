@@ -72,3 +72,9 @@ button {
   width: 100%;
   border-radius: 8px;
 }
+
+@media (width < 1000px) {
+  #slot-machine {
+    width: 17rem;
+  }
+}
