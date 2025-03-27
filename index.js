@@ -11,6 +11,7 @@ let color;
 let img;
 const images = [];
 const n = 48;
+let startIndex = 0;
 for (let i = 0; i < n; i++) {
   img = new Image();
   img.src = `./public/images/${i % n}.png`;
@@ -26,11 +27,11 @@ function spin() {
   aud.pause();
   aud.currentTime = 0;
 
-  const randIndex = Math.floor(Math.random() * n) + 10;
-  let i = 0;
+  const randIndex = (startIndex + Math.floor(Math.random() * n))%n;
+  let i = startIndex;
   const intervalId = setInterval(function() {
 
-    if (i === randIndex) {
+    if (i%n === randIndex) {
       clearInterval(intervalId);
       aud.play();
     }
@@ -43,8 +44,8 @@ function spin() {
 }
 
 function init() {
-  const index = Math.floor(Math.random() * n);
-  const image = images[index];
+  startIndex = Math.floor(Math.random() * n);
+  const image = images[startIndex];
   slotMachine.append(image);
 }
 
