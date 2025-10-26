@@ -12,8 +12,16 @@
     <div class="bg" style="background-image: url(public/bg.png);"></div>
     <h1>Jojo Slots</h1>
     <h2>Click to get a random Jojo pose!</h2>
-    <button onclick="spin()">Click</button>
+    <button class="spin-btn" onclick="spin()">Click</button>
     <div id="slot-machine"></div>
+    <div id="zoom">
+      <button onclick="closeZoom()">X</button>
+      <div class="img-container"></div>
+    </div>
+    <div id="recent">
+      <h3>Recent</h3>
+      <div id="recent-images"></div>
+    </div>
     
     <audio>
       <source src="public/done.mp3" type="audio/mpeg">
